@@ -1,0 +1,211 @@
+/* utilities */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* utilities */
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+
+}
+
+.container-body{
+    width: 800px;
+    margin: auto;
+    
+}
+
+/* Navigation */
+.logo {
+    width: 70px;
+    float: left;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: steelblue;
+    margin-left: 240px;
+}
+.navbar{
+    width: 700px;
+    /* border-bottom: 3px solid #000; */
+    float: right;
+    text-align: right;
+    margin-right: 295px;
+    
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    margin: auto;
+}
+
+.navbar a:hover{
+    border-bottom: 2px solid grey;
+    color: steelblue;
+}
+
+.line-header {
+    float: left;
+    width: 100%;
+    height: 5px;
+    background-color: slategray;
+    margin: 10px 0;
+
+}
+/* Sidebar */
+.sidebar {
+    margin-top: 1px;
+    width: 200px;
+    float: left;
+}
+
+.sidebar h1{
+    margin: 10px 0;
+    font-size: 30px;
+    color: steelblue;
+}
+
+.post {
+    margin: 15px 0;
+}
+.post p{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+
+.post h2 a{
+    text-decoration: none;
+    color: steelblue;
+}
+
+.post h2 a:hover {
+    border-bottom: 2px solid #333;
+}
+
+/* Content */
+.content{
+    width: 500px;
+    float: right;
+    margin-top: 10px;
+}
+
+.content-header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold ;
+}
+
+.content span {
+    font-size: 15px;
+}
+
+.content-article{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.content-article p {
+    line-height: 25px;
+}
+
+.footer {
+   text-align: left;
+   margin-top: 10px;
+   margin-left: 240px;
+   font-size: 15px;
+   line-height: 20px;
+}
+
+.line-footer {
+    width: 100%;
+    height: 2px;
+    background-color: slategray;
+    margin-top: 50px;
+
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
